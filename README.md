@@ -18,3 +18,43 @@ Requirements
 
     Python 3.x
     Pandas library
+
+Usage
+
+    Install the necessary Python packages:
+
+    bash
+
+pip install pandas
+
+Prepare your input files:
+
+    Ensure the input Excel file (input_file.xlsx) contains an 'EMAIL' column.
+    Have a separate Excel file (Bekende malafide handelspartijen.xlsx) with a list of known domains.
+
+Run the script:
+
+bash
+
+    python email_domain_matcher.py
+
+Example
+
+python
+
+import pandas as pd
+
+# Function to extract domain from email
+def extract_domain(email):
+    # (Function definition remains unchanged)
+
+# Read the Excel file containing email addresses
+emails_df = pd.read_excel('input_file.xlsx')
+
+# (Rest of your provided code)
+# ... (code snippet continues)
+
+Note
+
+    Ensure column names and file paths match your actual file setup.
+
