@@ -36,7 +36,7 @@ Run the script:
 
 bash
 
-    python email_domain_matcher.py
+    python domain_matcher.py
 
 Example
 
