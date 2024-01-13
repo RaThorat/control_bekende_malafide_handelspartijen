@@ -5,7 +5,7 @@ def extract_domain(email):
     if pd.isnull(email):
         return None  # or any placeholder value for missing emails
     if isinstance(email, str):
-        return email.split('@')[-1]
+        return email.split('@')[-1].lower()  # Convert domain to lowercase
     else:
         return None  # or any placeholder value for non-string types
 
@@ -26,3 +26,4 @@ matched_domains = merged_df[['EMAIL', 'url']].dropna()
 
 # Write the matched domains to an output file
 matched_domains.to_excel('matched_domains.xlsx', index=False)
+
